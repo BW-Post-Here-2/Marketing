@@ -1,0 +1,270 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+p.title {
+  font-size: 4rem;
+  text-align: left;
+}
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header nav {
+  width: 50%;
+  border: 0.2rem solid #FF6314;
+  padding: 0.75%;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0.8rem 0.5rem 0.3rem black;
+}
+header nav .posthere {
+  box-shadow: 0.8rem 0.5rem 0.3rem black;
+  border-radius: 1rem;
+  padding: 1%;
+  justify-content: space-evenly;
+  width: 25%;
+  background-color: #2b2b2b;
+}
+header nav .posthere #blue {
+  color: #5296DD;
+}
+header nav div {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+header nav div a {
+  box-shadow: 0.8rem 0.5rem 0.3rem black;
+  background-color: #2b2b2b;
+  border: 0.05rem solid #1a1a1a;
+  border-radius: 1rem;
+  color: #D7D7D7;
+  text-decoration: none;
+  padding: 1%;
+  text-align: center;
+  font-size: 2rem;
+}
+header nav div a:hover {
+  color: #5296DD;
+  background-color: #404040;
+}
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer .botnav {
+  width: 30%;
+  border: 0.1rem solid #FF6314;
+  padding: 0.75%;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0.8rem 0.5rem 0.3rem black;
+}
+footer .botnav p {
+  border: 0.05rem solid black;
+  box-shadow: 0.8rem 0.5rem 0.3rem black;
+  border-radius: 1rem;
+  padding: 1%;
+}
+footer .botnav .botdiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .botnav .botdiv a {
+  box-shadow: 0.8rem 0.5rem 0.3rem black;
+  background-color: #2b2b2b;
+  border: 0.05rem solid #1a1a1a;
+  border-radius: 1rem;
+  color: #D7D7D7;
+  text-decoration: none;
+  padding: 1%;
+  text-align: center;
+  font-size: 2rem;
+}
+footer .botnav .botdiv a:hover {
+  color: #5296DD;
+  background-color: #404040;
+}
+body {
+  background-color: #1a1a1a;
+  color: #D7D7D7;
+  border: 0.5rem solid #FF6314;
+  padding: 2%;
+  border-radius: 2rem;
+}
+body h1,
+body h2 {
+  font-size: 2rem;
+  border: 0.05rem solid black;
+  box-shadow: 0.8rem 0.5rem 0.3rem black;
+  border-radius: 1rem;
+  padding: 0.5%;
+  width: 20%;
+  background-color: #2b2b2b;
+}
+body h1 .hassle,
+body h2 .hassle {
+  color: #5296DD;
+}
+body h1 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 21%;
+}
+body h2 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 12%;
+}
+body p {
+  padding: 1%;
+  font-size: 1.5rem;
+}
