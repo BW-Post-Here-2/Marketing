@@ -144,47 +144,55 @@ p {
 }
 p.title {
   font-size: 4rem;
-  text-align: left;
+  text-align: center;
 }
 header {
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  background-color: #2b2b2b;
+  border-bottom: 0.1rem solid #FF6314;
+  box-shadow: 0.5rem 0.3rem 1rem black;
 }
 header nav {
-  width: 50%;
-  border: 0.2rem solid #FF6314;
+  width: 95%;
   padding: 0.75%;
   border-radius: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0.8rem 0.5rem 0.3rem black;
 }
 header nav .posthere {
-  box-shadow: 0.8rem 0.5rem 0.3rem black;
+  box-shadow: 0.5rem 0.3rem 1rem black;
   border-radius: 1rem;
-  padding: 1%;
-  justify-content: space-evenly;
-  width: 25%;
-  background-color: #2b2b2b;
+  padding: 0.5% 2%;
+  width: 15%;
+  background-color: #1a1a1a;
 }
 header nav .posthere #blue {
   color: #5296DD;
+}
+header nav .links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
 }
 header nav div {
   width: 60%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 header nav div a {
-  box-shadow: 0.8rem 0.5rem 0.3rem black;
+  box-shadow: 0.5rem 0.3rem 1rem black;
   background-color: #2b2b2b;
-  border: 0.05rem solid #1a1a1a;
+  border: 0.1rem solid #1a1a1a;
   border-radius: 1rem;
   color: #D7D7D7;
   text-decoration: none;
-  padding: 1%;
+  padding: 1.8% 5%;
   text-align: center;
   font-size: 2rem;
 }
@@ -193,23 +201,23 @@ header nav div a:hover {
   background-color: #404040;
 }
 footer {
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  position: fixed;
+  bottom: 5%;
 }
 footer .botnav {
-  width: 30%;
+  width: 20%;
   border: 0.1rem solid #FF6314;
   padding: 0.75%;
   border-radius: 1rem;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  box-shadow: 0.8rem 0.5rem 0.3rem black;
+  box-shadow: 0.5rem 0.3rem 1rem black;
 }
 footer .botnav p {
   border: 0.05rem solid black;
-  box-shadow: 0.8rem 0.5rem 0.3rem black;
+  box-shadow: 0.5rem 0.3rem 1rem black;
   border-radius: 1rem;
   padding: 1%;
 }
@@ -217,17 +225,18 @@ footer .botnav .botdiv {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 footer .botnav .botdiv a {
-  box-shadow: 0.8rem 0.5rem 0.3rem black;
+  box-shadow: 0.5rem 0.3rem 1rem black;
   background-color: #2b2b2b;
   border: 0.05rem solid #1a1a1a;
   border-radius: 1rem;
   color: #D7D7D7;
   text-decoration: none;
-  padding: 1%;
+  padding: 1.5%;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 footer .botnav .botdiv a:hover {
   color: #5296DD;
@@ -236,35 +245,106 @@ footer .botnav .botdiv a:hover {
 body {
   background-color: #1a1a1a;
   color: #D7D7D7;
-  border: 0.5rem solid #FF6314;
-  padding: 2%;
-  border-radius: 2rem;
+  border: 0.3rem solid black;
+  padding: 0;
+  min-height: 100vh;
+}
+body .maincontent {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
 }
 body h1,
 body h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   border: 0.05rem solid black;
-  box-shadow: 0.8rem 0.5rem 0.3rem black;
   border-radius: 1rem;
-  padding: 0.5%;
-  width: 20%;
+  box-shadow: 0.5rem 0.3rem 1rem black;
+  padding: 2%;
   background-color: #2b2b2b;
+  text-align: center;
+  width: 60%;
 }
-body h1 .hassle,
-body h2 .hassle {
+body .hassle {
   color: #5296DD;
 }
-body h1 {
+body section {
+  width: 50%;
   display: flex;
-  justify-content: space-evenly;
-  width: 21%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1% 0;
 }
-body h2 {
+body section .buttons {
   display: flex;
-  justify-content: space-evenly;
-  width: 12%;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 5% 0;
+}
+body img {
+  height: 50rem;
+  filter: grayscale(20%);
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.3rem 1rem black;
+  border: 0.1rem solid black;
+}
+body button {
+  font-size: 1.8rem;
+  margin: 3%;
+  padding: 3% 10%;
+  background-color: #2b2b2b;
+  color: #D7D7D7;
+  border: 0.1rem solid black;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.3rem 1rem black;
+}
+body button:hover {
+  color: #5296DD;
+  background-color: #404040;
 }
 body p {
-  padding: 1%;
-  font-size: 1.5rem;
+  text-align: center;
+  width: 80%;
+  padding: 5%;
+  font-size: 2rem;
+}
+body .description {
+  background-color: #2b2b2b;
+  margin: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.3rem 1rem black;
+}
+@media (max-width: 500px) {
+  body .maincontent {
+    flex-direction: column;
+  }
+  body .links {
+    width: 100%;
+    padding: 3%;
+  }
+  body a {
+    width: 80%;
+    margin: 2%;
+    font-size: 5rem;
+  }
+  body .title {
+    font-size: 5rem;
+    margin: 1%;
+    padding: 1%;
+    width: 50%;
+  }
+  body nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  body nav .posthere {
+    width: 100%;
+  }
 }

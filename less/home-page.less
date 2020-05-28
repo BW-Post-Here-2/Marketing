@@ -1,38 +1,118 @@
 body {
   background-color: @dark;
   color: @gray;
-  border: .5rem solid @orange;
-  padding: 2%;
-  border-radius: 2rem;
+  border: .3rem solid black;
+  padding: 0;
+  min-height: 100vh;
+
+  .maincontent {
+    .flex(space-evenly, center);
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+  }
 
   h1, h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     border: .05rem solid black;
-    box-shadow: .8rem .5rem .3rem black; 
     border-radius: 1rem;
-    padding: .5%;
-    width: 20%;
+    box-shadow: .5rem .3rem 1rem black;
+    padding: 2%;
     background-color: @medium; 
+    text-align: center;
+    width: 60%
 
-    .hassle {
-      color: @blue;
+  }
+  
+  .hassle {
+    color: @blue;
+  }
+
+  section {
+    width: 50%;
+    .flex(center, center);
+    flex-direction: column;
+    padding: 1% 0;
+
+    .buttons{
+      .flex(space-around, center);
+      width: 80%;
+      margin: 5% 0;
     }
   }
 
-  h1 {
-    display: flex;
-    justify-content: space-evenly;
-    width: 21%;
+  img {
+    height: 50rem;
+    filter: grayscale(20%);
+    border-radius: 1rem;
+    box-shadow: .5rem .3rem 1rem black;
+    border: .1rem solid black;
   }
 
-    h2 {
-    display: flex;
-    justify-content: space-evenly;
-    width: 12%;
-    }
+  button {
+    font-size: 1.8rem;
+    margin: 3%;
+    padding: 3% 10%;
+    background-color: @medium;
+    color: @gray;
+    border: .1rem solid black; 
+    border-radius: 1rem;
+    box-shadow: .5rem .3rem 1rem black;
+  }
+
+  button:hover {
+    color: @blue;
+    background-color: @hover;
+  }
   
   p {
-    padding: 1%;
-    font-size: 1.5rem;
+    text-align: center;
+    width: 80%;
+    padding: 5%;
+    font-size: 2rem;
+  }
+
+  .description {
+    background-color: @medium;
+    margin: 3rem;
+    border-radius: 1rem;
+    box-shadow: .5rem .3rem 1rem black;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+
+    .maincontent {
+      flex-direction: column;
+    }
+    
+    .links {
+      width: 100%;
+      padding: 3%;
+    }
+    
+    a {
+      width: 80%;
+      margin: 2%;
+      font-size: 5rem;
+    }
+
+    .title {
+      font-size: 5rem;
+      margin: 1%;
+      padding: 1%;
+      width: 50%;
+    }
+
+    nav {
+      .flex(center, center);
+      flex-direction: column;
+
+      .posthere {
+        width: 100%;
+        
+      }
+    }
   }
 }
