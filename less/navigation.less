@@ -1,0 +1,57 @@
+p.title {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+header {
+    width: 100%;
+    .flex(center, center);
+    background-color: @medium;
+    border-bottom: .1rem solid @orange;
+    box-shadow: .5rem .3rem 1rem black; 
+
+    nav {
+        width: 95%;
+        padding: .75%;
+        border-radius: 1rem;
+        .flex(space-between, center);
+
+        .posthere {
+            box-shadow: .5rem .3rem 1rem black; 
+            border-radius: 1rem;
+            padding: .5% 2%;
+            width: 15%;
+            background-color: @dark;
+
+            #blue {
+                color: @blue;
+            }
+        }
+
+        .links {
+            .flex(space-evenly, center);
+        }
+
+        div {
+            width: 60%;
+            .flex(space-evenly, center);
+
+            a {
+                box-shadow: .5rem .3rem 1rem black; 
+                background-color: @medium;
+                border: .1rem solid #1a1a1a;
+                border-radius: 1rem;
+                color: @gray;
+                text-decoration: none;
+                padding: 1.8% 5%;
+                text-align: center;
+                font-size: 2rem;
+            }
+
+            a:hover {
+                color: @blue;
+                background-color: @hover;
+            }
+        }
+    }
+}
