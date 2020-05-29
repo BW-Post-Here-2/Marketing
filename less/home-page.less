@@ -80,16 +80,56 @@ body {
   }
 }
 
+.team {
+.flex (space-evenly, center);
+  flex-wrap: wrap;
+}
+
+.data, .web {
+  .flex(space-evenly, center);
+  margin: 1%;
+
+  img {
+    width: 30rem;
+    height: auto;
+    border: .1rem solid black;
+    box-shadow: .5rem .3rem 1rem black;
+  }
+}
+
+.meet {
+  width: 100%;
+  .flex(center, center);
+  padding: 1%;
+
+  .abouttitle {
+    text-align: center;
+    width: 30%;
+    border: .1rem solid black;
+    box-shadow: .5rem .3rem 1rem black;
+  }
+}
+
+
+
+
 @media (max-width: 500px) {
   body {
 
     .maincontent {
       flex-direction: column;
+      width: 100%;
+      
+      section {
+        width: 80%;
+      }
     }
     
     .links {
       width: 100%;
       padding: 3%;
+      .flex(center, center);
+      flex-direction: column;
     }
     
     a {
@@ -114,5 +154,57 @@ body {
         
       }
     }
+
+    h1 {
+      width: 80%;
+      margin-top: 2%;
+    }
+
+    footer {
+      position: static;
+    }
+
+    .botnav {
+      background-color: @dark;
+      width: 80%;
+      margin-bottom: 3%;
+
+    }
   }
+
+  .team {
+    .flex (space-evenly, center);
+    flex-direction: column;
+      flex-wrap: nowrap;
+      width: 100%;
+    }
+    
+    .data, .web {
+      .flex(space-evenly, center);
+      flex-direction: column;
+      margin: 1%;
+      width: 85%;
+    
+      img {
+        margin: 1%;
+        width: 98%;
+        height: auto;
+        border: .1rem solid black;
+        box-shadow: .5rem .3rem 1rem black;
+      }
+    }
+    
+    .meet {
+      width: 100%;
+      .flex(center, center);
+      padding: 1%;
+    
+      .abouttitle {
+        text-align: center;
+        width: 85%;
+        border: .1rem solid black;
+        box-shadow: .5rem .3rem 1rem black;
+      }
+    }
+
 }

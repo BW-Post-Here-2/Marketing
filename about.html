@@ -1,0 +1,138 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Post Here</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/index.css" rel="stylesheet">
+  <style>
+    .container {
+      position: relative;
+      width: 95%;
+      margin: 1%;
+    }
+    
+    .image {
+      display: block;
+      width: 30rem;
+      height: auto;
+    }
+    
+    .overlay {
+      border-radius: 1rem;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #2b2b2b;
+      overflow: hidden;
+      width: 0;
+      height: 100%;
+      transition: .5s ease;
+    }
+    
+    .container:hover .overlay {
+      width: 100%;
+      height: 100%;
+    }
+    
+    .text {
+      text-align: center;
+      color: white;
+      font-size: 2rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      white-space: pre-wrap;
+      }
+    }
+    </style>
+</head>
+
+<body class="about">
+  <header>
+    <nav>
+      <div class="posthere">
+        <p class="title">Post </p>
+        <p class="title" id="blue"> Here</p>
+        <p class="title"><i class="fab fa-reddit-square"></i></p>
+      </div>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="https://web-front-end-2.now.sh/signin">Login</a>
+        <a href="https://web-front-end-2.now.sh/signup">Sign Up</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <div class="meet">
+  <h1 class="abouttitle">Meet the team behind our work.</h1>
+</div>
+<div class="team">
+<div class="data">
+  <div class="container">
+    <img src="img/ade.png" alt="Picture" class="image">
+    <div class="overlay">
+      <div class="text">Machine Learning Engineer. Data scientist with an interest in Recommender systems, Deep Learning, and NLP.</div>
+    </div>
+  </div>
+  <div class="container">
+    <img src="img/sam.png" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Data Engineer. Data scientist with a background in Econometrics.</div>
+    </div>
+  </div>
+  <div class="container">
+    <img src="img/chris.png" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Machine Learning Engineer. Data scientist with an interest in analytics in sports and behavioral economics.</div>
+    </div>
+  </div>
+  <div class="container">
+    <img src="img/josh.png" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Data Engineer. Has a cool last name.</div>
+    </div>
+  </div>
+</div>
+
+<div class="web">
+  <div class="container">
+    <img src="img/erica.png" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Marketing Page Developer. Looking to leverage experience with new opportunities and expand her knowledge.</div>
+    </div>
+  </div>
+  <div class="container">
+    <img src="img/drew.png" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">React 1 Developer. Likes to stand at his workstation.</div>
+    </div>
+  </div>
+  <div class="container">
+    <img src="img/joowoon.png" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Backend Developer. Full stack developer who loves problem solving and is a consistent learner.</div>
+    </div>
+  </div>
+  <div class="container">
+    <img src="img/andrew.png" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">React 2 Developer. Has a sick picture of an ape behind his desktop.</div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</body>
+
+</html>
